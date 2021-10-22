@@ -75,6 +75,7 @@ LIBPCRE_FLAGS_SUPPRESS += -Wno-unused-parameter
 LIBPCRE_FLAGS_SUPPRESS += -Wno-unused-variable
 LIBPCRE_FLAGS_SUPPRESS += -Wno-unused-value
 LIBPCRE_FLAGS_SUPPRESS += -Wno-unused-function
+LIBPCRE_FLAGS_SUPPRESS += -Wno-unused-but-set-variable
 LIBPCRE_FLAGS_SUPPRESS += -Wno-missing-field-initializers
 LIBPCRE_FLAGS_SUPPRESS += -Wno-implicit-fallthrough
 LIBPCRE_FLAGS_SUPPRESS += -Wno-int-to-pointer-cast

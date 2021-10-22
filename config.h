@@ -1,6 +1,7 @@
 /* config.h.  Generated from config.h.in by configure.  */
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+#include <uk/config.h>
 
 /* PCRE is written in Standard C, but there are a few non-standard things it
 can cope with, allowing it to run on SunOS4 and other "close to standard"
@@ -86,10 +87,12 @@ sure both macros are undefined; an emulation function will then be used. */
 #define HAVE_MEMMOVE 1
 
 /* Define if you have POSIX threads libraries and header files. */
+#ifdef CONFIG_LIBPTHREAD_EMBEDDED
 #define HAVE_PTHREAD 1
 
 /* Have PTHREAD_PRIO_INHERIT. */
 #define HAVE_PTHREAD_PRIO_INHERIT 1
+#endif
 
 /* Define to 1 if you have the <readline/history.h> header file. */
 /* #undef HAVE_READLINE_HISTORY_H */
