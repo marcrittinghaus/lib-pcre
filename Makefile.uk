@@ -45,7 +45,8 @@ $(eval $(call addlib_s,libpcre,$(CONFIG_LIBPCRE)))
 ################################################################################
 LIBPCRE_VERSION=8.45
 LIBPCRE_BASENAME=pcre-$(LIBPCRE_VERSION)
-LIBPCRE_URL=https://ftp.pcre.org/pub/pcre/pcre-$(LIBPCRE_VERSION).tar.gz
+#LIBPCRE_URL=https://ftp.pcre.org/pub/pcre/pcre-$(LIBPCRE_VERSION).tar.gz
+LIBPCRE_URL=https://deac-fra.dl.sourceforge.net/project/pcre/pcre/$(LIBPCRE_VERSION)/pcre-$(LIBPCRE_VERSION).tar.gz
 LIBPCRE_PATCHDIR=$(LIBPCRE_BASE)/patches
 $(eval $(call fetch,libpcre,$(LIBPCRE_URL)))
 $(eval $(call patch,libpcre,$(LIBPCRE_PATCHDIR),$(LIBPCRE_BASENAME)))
